@@ -1,0 +1,21 @@
+server:
+  port: 9100
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:9000/eureka"
+
+spring:
+  application:
+    name: portal
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+  devtools:
+    restart:
+      enabled: true
